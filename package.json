@@ -1,7 +1,7 @@
 {
   "name": "@ligalaiz/notab",
   "version": "0.0.1",
-  "description": "Hiking tools",
+  "description": "Notab",
   "private": true,
   "main": "index.js",
   "scripts": {
