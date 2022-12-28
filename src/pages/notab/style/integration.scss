@@ -1,0 +1,91 @@
+@use '../../../assets/styles/internals/index';
+
+.integration {
+  &__title {
+    margin-bottom: 2.4rem;
+
+    @include title-24;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+
+    @include text-16;
+  }
+
+  &__chart {
+    position: relative;
+
+    & img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--colorless {
+      padding: 1.4rem;
+      border: 0.035333rem solid $white-50;
+      border-radius: 0.847992rem;
+      width: 14.45rem;
+      height: 8.62rem;
+
+      & img {
+
+        width: 11.704rem;
+        height: 5.832rem;
+      }
+    }
+
+    &--circle {
+      width: 10.943rem;
+      height: 2.128rem;
+    }
+
+    &--one {
+      display: none;
+    }
+
+    &--two {
+      width: 9.095rem;
+      height: 5.518rem;
+      border: 0.0289226rem solid $white-50;
+      border-radius: 0.694141rem;
+      padding: 1.1rem;
+
+      & img {
+        width: 6.911rem;
+        height: 3.18rem;
+      }
+    }
+
+    &--three {
+      width: 8.562rem;
+      height: 9.056rem;
+
+      border: 0.0289226rem solid $white-50;
+      border-radius: 0.694141rem;
+
+      & img {
+        width: 5.562rem;
+        height: 6.286rem;
+      }
+    }
+
+    &--four {
+      width: 9.095rem;
+      height: 5.518rem;
+      border: 0.0289226rem solid $white-50;
+      border-radius: 0.694141rem;
+
+      & img {
+        width: 7.268rem;
+        height: 2.894rem;
+      }
+    }
+
+    &--data {
+      width: 29.6rem;
+      height: 5.918rem;
+    }
+  }
+}

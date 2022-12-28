@@ -5,3 +5,13 @@
   line-height: $h;
   color: $c;
 }
+
+@mixin title-24 {
+  @include fontz(2.4rem, 1.2, $white);
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+
+@mixin text-16 {
+  @include fontz(1.6rem, 1.375, $white);
+}

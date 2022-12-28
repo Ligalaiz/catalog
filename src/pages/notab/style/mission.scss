@@ -1,0 +1,66 @@
+@use '../../../assets/styles/internals/index';
+
+.mission {
+  &__membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    margin-bottom: 11rem;
+  }
+
+  &__left,
+  &__right {
+    border: 2px solid $white-50;
+    border-radius: 2.13671rem;
+    padding: 4rem 3.3rem;
+    max-width: 34.5rem;
+    width: 100%;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+
+    @include title-24;
+    font-family: inherit;
+  }
+
+  &__link {
+    @include fontz(1.8rem, 1.38, $white);
+    text-decoration-line: underline;
+  }
+}
+
+.vision-mission {
+    display: flex;
+  flex-direction: column;
+
+  &__left {
+
+    display: flex;
+    justify-content: center;
+    order: 1;
+    margin-bottom: 9.4rem;
+  }
+
+  &__right {
+    margin-bottom: 16.3rem;
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    @include title-24;
+  }
+
+  &__promo {
+    @include text-16;
+  }
+
+  &__img-wrap {
+    position: relative;
+
+    width: 17.253rem;
+    padding-bottom: 34.612rem;
+  }
+}

@@ -1,0 +1,41 @@
+@use '../../../assets/styles/internals/index';
+
+.header {
+  margin-bottom: 8.2rem;
+}
+
+.nav-header {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    width: 10.2rem;
+    height: 5.269rem;
+  }
+
+  &__img-wrap {
+    position: relative;
+
+    width: 5.173rem;
+    padding-bottom: 5.269rem;
+  }
+
+  &__img-wrap-text {
+    position: relative;
+
+    width: 4.641rem;
+    padding-bottom: 1.196rem;
+  }
+
+  &__login {
+    padding-bottom: 0.6rem;
+    border-bottom: 0.1rem solid $white;
+
+    @include fontz(1.4rem, 1.357, $white);
+    font-weight: 500;
+  }
+}

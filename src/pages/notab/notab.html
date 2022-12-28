@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,13 +22,19 @@
           <nav class="header__nav nav-header">
             <ul class="nav-header__list">
               <li class="nav-header__item">
-                <div class="nav-header__img-wrap">
-                  <img src="../../assets/img/logo.png" alt="logo" class="nav-header__img" />
-                  <p class="nav-header__logo-text">NoTab</p>
+                <div class="nav-header__logo">
+                  <div class="nav-header__img-wrap">
+                    <img class="nav-header__img" src="../../assets/img/logo.png" alt="logo" />
+                  </div>
+                  <div class="nav-header__img-wrap-text">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="../../assets/img/sprites.svg#logo-text"></use>
+                    </svg>
+                  </div>
                 </div>
               </li>
               <li class="nav-header__item">
-                <a href="javascript:void(0)" class="nav-header__login">Login</a>
+                <a class="nav-header__login" href="javascript:void(0)">Login</a>
               </li>
             </ul>
           </nav>
@@ -46,96 +52,112 @@
               </div>
               <div class="platform__right">
                 <div class="platform__img-wrap">
-                  <img src="../../assets/img/phone.png" alt="phone application" class="platform__img" />
+                  <img class="platform__img" src="../../assets/img/phone.png" alt="phone application" />
                 </div>
               </div>
             </div>
-            <div class="platform__dowload">
+            <div class="platform__download">
               <p class="platform__promo">Download our app</p>
               <div class="platform__links links-bar">
-                <a href="javascript:void(0)" class="links-bar__apple">
-                  Download on the <span class="links-bar__apple--thick">App Store</span>
+                <a class="links-bar__apple" href="javascript:void(0)">
+                  <div class="links-bar__img-wrap links-bar__img-wrap--apple">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="../../assets/img/sprites.svg#app-store"></use>
+                    </svg>
+                  </div>
                 </a>
-                <a href="javascript:void(0)" class="links-bar__google">
-                  Get it on <span class="links-bar__google--thick">Google Play</span>
+                <a class="links-bar__google" href="javascript:void(0)">
+                  <div class="links-bar__img-wrap links-bar__img-wrap--google">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="../../assets/img/sprites.svg#google-play"></use>
+                    </svg>
+                  </div>
                 </a>
               </div>
             </div>
           </div>
         </section>
         <section class="mission">
-          <div class="mission__membership">
-            <div class="mission__left">
-              <p class="mission__text">Would like to become a member, please contact us</p>
-              <a href="mailto:support@notab.com">support@notab.com</a>
-            </div>
-            <div class="mission__right">
-              <p class="mission__text">Already a partner?</p>
-              <a href="javascript:void(0)" class="mission__link">Login</a>
-            </div>
-          </div>
-          <div class="mission__vision vision-mission">
-            <div class="vision-mission__left">
-              <div class="vision-mission__img-wrap">
-                <img src="../../assets/img/phone-horizontal.png" alt="phone application" class="vision-mission__img" />
+          <div class="container">
+            <div class="mission__membership">
+              <div class="mission__left">
+                <p class="mission__text">Would like to become a member, please contact us</p>
+                <a class="mission__link" href="mailto:support@notab.com">support@notab.com</a>
+              </div>
+              <div class="mission__right">
+                <p class="mission__text">Already a partner?</p>
+                <a class="mission__link" href="javascript:void(0)">Login</a>
               </div>
             </div>
-            <div class="vision-mission__right">
-              <h2 class="vision-mission__title">Our mission and vision</h2>
-              <p class="vision-mission__promo">
-                While technology is our sweet spot, we've developed our vision alongside our customers to ensure your
-                everyday problems are solved through simplistic tools. And as your business grows, we'll grow right
-                alongside with you.
-              </p>
+            <div class="mission__vision vision-mission">
+              <div class="vision-mission__left">
+                <div class="vision-mission__img-wrap">
+                  <img class="vision-mission__img" src="../../assets/img/phone.png" alt="phone application" />
+                </div>
+              </div>
+              <div class="vision-mission__right">
+                <h2 class="vision-mission__title">Our mission and vision</h2>
+                <p class="vision-mission__promo">
+                  While technology is our sweet spot, we've developed our vision alongside our customers to ensure your
+                  everyday problems are solved through simplistic tools. And as your business grows, we'll grow right
+                  alongside with you.
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <section class="scanner">
-          <div class="scanner__left">
-            <div class="scanner__img-wrap">
-              <img class="scanner__img" src="../../assets/img/phone-verify.png" alt="phone verification" />
+          <div class="container">
+            <div class="scanner__wrap">
+              <div class="scanner__left">
+                <div class="scanner__img-wrap">
+                  <img class="scanner__img" src="../../assets/img/phone-verify.png" alt="phone verification" />
+                </div>
+                <div class="scanner__img-wrap">
+                  <img class="scanner__img" src="../../assets/img/phone-verify-success.png" alt="phone verification" />
+                </div>
+              </div>
+              <div class="scanner__right">
+                <h2 class="scanner__title">ID Scanner</h2>
+                <p class="scanner__text">
+                  Scan, verify, and collect data on each person that walks through your door to humanize your data. You
+                  also get a digital 86 list as well as a citywide ban list to keep your venue safe.
+                </p>
+              </div>
             </div>
-            <div class="scanner__img-wrap">
-              <img class="scanner__img" src="../../assets/img/phone-verify-success.png" alt="phone verification" />
-            </div>
-          </div>
-          <div class="scanner__right">
-            <h2 class="scanner__title">Id Scanner</h2>
-            <p class="scanner__text">
-              Scan, verify, and collect data on each person that walks through your door to humanize your data. You also
-              get a digital 86 list as well as a citywide ban list to keep your venue safe.
-            </p>
           </div>
         </section>
         <section class="integration">
-          <div class="integration__left">
-            <h2 class="integration__title">BI Tool Integration</h2>
-            <p class="integration__text">
-              We use Business Intelligence Tool that allow you to be update what is happening in your business just by
-              one click. Track revenue and profit bu one click.
-            </p>
-          </div>
-          <div class="integration__right">
-            <div class="integration__chart integration__chart--colorless">
-              <img src="../../assets/img/chart-colorless.svg" alt="chart" />
+          <div class="container">
+            <div class="integration__left">
+              <h2 class="integration__title">BI Tool Integration</h2>
+              <p class="integration__text">
+                We use Business Intelligence Tool that allow you to be update what is happening in your business just by
+                one click. Track revenue and profit bu one click.
+              </p>
             </div>
-            <div class="integration__chart integration__chart--circle">
-              <img src="../../assets/img/chart-circle.svg" alt="chart" />
-            </div>
-            <div class="integration__chart integration__chart--one">
-              <img src="../../assets/img/chart-color-one.svg" alt="chart" />
-            </div>
-            <div class="integration__chart integration__chart--two">
-              <img src="../../assets/img/chart-color-two.svg" alt="chart" />
-            </div>
-            <div class="integration__chart integration__chart--three">
-              <img src="../../assets/img/chart-color-three.svg" alt="chart" />
-            </div>
-            <div class="integration__chart integration__chart--four">
-              <img src="../../assets/img/chart-color-four.svg" alt="chart" />
-            </div>
-            <div class="integration__chart integration__chart--data">
-              <img src="../../assets/img/chart-data.svg" alt="chart" />
+            <div class="integration__right">
+              <div class="integration__chart integration__chart--colorless">
+                <img src="../../assets/img/chart-colorless.svg" alt="chart" />
+              </div>
+              <div class="integration__chart integration__chart--circle">
+                <img src="../../assets/img/chart-circle.svg" alt="chart" />
+              </div>
+              <div class="integration__chart integration__chart--one">
+                <img src="../../assets/img/chart-color-one.svg" alt="chart" />
+              </div>
+              <div class="integration__chart integration__chart--two">
+                <img src="../../assets/img/chart-color-two.svg" alt="chart" />
+              </div>
+              <div class="integration__chart integration__chart--three">
+                <img src="../../assets/img/chart-color-three.svg" alt="chart" />
+              </div>
+              <div class="integration__chart integration__chart--four">
+                <img src="../../assets/img/chart-color-four.svg" alt="chart" />
+              </div>
+              <div class="integration__chart integration__chart--data">
+                <img src="../../assets/img/chart-data.svg" alt="chart" />
+              </div>
             </div>
           </div>
         </section>
@@ -158,17 +180,17 @@
             </div>
             <div class="qr__right">
               <div class="qr__img-wrap">
-                <img class="qr__img" src="../../assets/img/phone-order-1.png" alt="phone order" />
+                <!-- <img class="qr__img" src="../../assets/img/phone-order-1.png" alt="phone order" /> -->
               </div>
               <div class="qr__img-wrap">
-                <img class="qr__img" src="../../assets/img/phone-order-2.png" alt="phone order" />
+                <!-- <img class="qr__img" src="../../assets/img/phone-order-2.png" alt="phone order" /> -->
               </div>
             </div>
           </div>
           <div class="qr__generate generate-qr">
             <div class="generate-qr__wrap">
               <div class="generate-qr__img-wrap">
-                <img class="generate-qr__img" src="../../assets/img/phone-qr.png" alt="phone generate" />
+                <!-- <img class="generate-qr__img" src="../../assets/img/phone-qr.png" alt="phone generate" /> -->
               </div>
               <div class="generate-qr__notice">Scan QR-code</div>
             </div>
@@ -198,7 +220,7 @@
         </section>
         <section class="promo">
           <div class="promo__img-wrap">
-            <img class="promo__img" src="../../assets/img/phone-notab.png" alt="promo" />
+            <!-- <img class="promo__img" src="../../assets/img/phone-notab.png" alt="promo" /> -->
           </div>
         </section>
         <section class="touch">

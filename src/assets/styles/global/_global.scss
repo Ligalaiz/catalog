@@ -75,12 +75,12 @@ body {
   height: 100%;
   width: 100%;
 
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5;
 
-  background-color: $white;
+  background-color: $black;
 
   user-select: none;
   -webkit-font-smoothing: antialiased;
@@ -145,12 +145,12 @@ ul {
 }
 
 .wrapper {
-  min-width: 32rem;
+  min-width: 36rem;
   min-height: 100%;
 }
 
 ::-webkit-scrollbar {
-  width: 1.4rem;
+  width: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {

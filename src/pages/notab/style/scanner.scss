@@ -1,0 +1,40 @@
+@use '../../../assets/styles/internals/index';
+
+.scanner {
+  padding-top: 22.4rem;
+
+  background: top center url('../../img/scanner-mb-bg.jpg') no-repeat;
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    @include title-24;
+  }
+
+  &__text {
+    margin-bottom: 7rem;
+
+    @include text-16;
+  }
+
+  &__img-wrap {
+    position: relative;
+
+    width: 28.708rem;
+    padding-bottom: 57.593rem;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.5rem;
+    margin-bottom: 14.4rem;
+    align-items: center;
+    order: 1;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}

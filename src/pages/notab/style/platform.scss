@@ -1,0 +1,83 @@
+@use '../../../assets/styles/internals/index';
+
+.platform {
+  &__wrap {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-bottom: 14.5rem;
+  }
+
+  &__title {
+    max-width: 20.7rem;
+    margin-bottom: 2.4rem;
+
+    @include fontz(3.5rem, 1.142, $white);
+    font-family: 'Montserrat';
+    font-weight: 700;
+  }
+
+  &__text {
+    max-width: 24rem;
+
+    @include text-16;
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  &__img-wrap {
+    position: absolute;
+
+    width: 16.1rem;
+    padding-bottom: 32.299rem;
+  }
+
+  &__promo {
+    margin-bottom: 3.4rem;
+
+    @include title-24;
+  }
+
+  &__download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.links-bar {
+  &__img-wrap {
+    position: relative;
+
+    &--apple {
+      width: 13.6rem;
+      height: 3.2rem;
+    }
+
+    &--google {
+      width: 15.8rem;
+      height: 3.5rem;
+    }
+  }
+
+  &__apple,
+  &__google {
+    display: block;
+    width: 18.5rem;
+    height: 6rem;
+
+    border-radius: 0.8rem;
+    border: 0.1rem solid $white;
+  }
+
+  &__apple {
+    padding: 1.4rem 2.5rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__google {
+    padding: 1.3rem;
+    margin-bottom: 7rem;
+  }
+}
