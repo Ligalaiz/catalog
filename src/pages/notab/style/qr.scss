@@ -1,0 +1,114 @@
+@use '../../../assets/styles/internals/index';
+
+.qr {
+  margin-bottom: 11.6rem;
+
+  &__left {
+    padding-top: 22.7rem;
+
+    background: top center url('../../img/qr-mb-bg.jpg') no-repeat;
+  }
+
+  &__right {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11.4rem;
+    margin-bottom: 13rem;
+
+    background: top right url('../../img/order-mb-bg.png') no-repeat;
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    @include title-24;
+  }
+
+  &__text {
+    margin-bottom: 5rem;
+
+    @include text-16;
+  }
+
+  &__img-wrap {
+    position: relative;
+
+    width: 28.098rem;
+    height: 56.368rem;
+
+    &--sign {
+      width: 8.4rem;
+      height: 4.6rem;
+      margin-bottom: 3.8rem;
+      align-self: flex-start;
+    }
+
+    &--order {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__links {
+    margin-bottom: 3.4rem;
+  }
+}
+
+.generate-qr {
+  display: flex;
+  flex-direction: column;
+
+  background: no-repeat url('../../img/generate-mb-bg.png') center 60% / contain;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-wrap {
+    position: relative;
+
+    width: 18.158rem;
+    height: 36.428rem;
+    margin: 0 auto;
+  }
+
+  &__code {
+    position: relative;
+    padding-bottom: 8.5rem;
+    order: 1;
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    @include title-24;
+  }
+
+  &__text {
+    margin-bottom: 7rem;
+
+    @include text-16;
+  }
+
+  &__notice {
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+
+    @include fontz(1.8rem, 1.222, $white);
+    font-family: 'Montserrat';
+    font-weight: 700;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+
+    width: 3.4rem;
+    height: 10.2rem;
+  }
+}

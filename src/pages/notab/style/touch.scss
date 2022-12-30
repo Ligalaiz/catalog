@@ -1,0 +1,76 @@
+@use '../../../assets/styles/internals/index';
+
+.touch {
+  margin-bottom: 6.4rem;
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    @include title-24;
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 30.1rem;
+    margin-bottom: 4.9rem;
+
+    @include text-16;
+    text-align: center;
+  }
+
+  &__form,
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+
+  &__form {
+    margin-bottom: 7.4rem;
+  }
+
+  &__field {
+    width: 100%;
+    padding: 1.8rem 1.1rem;
+    border: 0.1rem solid $grey-5c5;
+    border-radius: 1rem;
+
+    &::placeholder {
+      @include text-16;
+      color: $grey-bfb;
+    }
+
+    &--message {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__btn {
+    border: 0.1rem solid $white;
+    border-radius: 1rem;
+    padding: 2.6rem;
+
+    @include title-24;
+    text-align: center;
+
+    background-color: transparent;
+    transition: $anim;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $black;
+
+      color: $black;
+      font-weight: 700;
+
+      background-color: $white;
+    }
+  }
+
+  &__promo {
+    margin-bottom: 4.5rem;
+
+    @include title-24;
+    text-align: center;
+  }
+}

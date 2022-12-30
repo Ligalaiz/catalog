@@ -1,0 +1,78 @@
+@use '../../../assets/styles/internals/index';
+
+.ordering {
+  margin-bottom: 9.5rem;
+
+  &__wrap {
+    position: relative;
+
+    min-height: 55.2rem;
+
+    background: url('../../img/phone-wrapped.png') center/contain no-repeat;
+  }
+
+  &__title {
+    max-width: 19.8rem;
+    margin-bottom: 2.4rem;
+
+    @include title-24;
+  }
+
+  &__subtitle {
+    margin-bottom: 7.5rem;
+
+    @include text-16;
+  }
+
+  &__text {
+    @include fontz(1.4rem, 1.2, $white);
+    font-family: 'Roboto';
+    font-weight: 500;
+  }
+
+  &__notice {
+    position: absolute;
+
+    display: flex;
+    padding: 1.3rem 1.5rem;
+    border: 0.076007rem solid $white-50;
+    border-radius: 1rem;
+
+    background-color: $black;
+
+    &--cards,
+    &--cards2 {
+      max-width: 16.9rem;
+    }
+
+    &--cards {
+      position: absolute;
+      left: 6.6%;
+
+      padding: 1rem 1rem 1rem 1.7rem;
+    }
+
+    &--cards2 {
+      top: 16%;
+      right: -3.7%;
+
+      padding: 1.2rem 1rem 1.3rem 1.7rem;
+    }
+
+    &--split {
+      bottom: 0%;
+      right: -4%;
+
+      max-width: 12.2rem;
+      padding: 1.2rem 1rem 1.2rem 2rem;
+    }
+
+    &--skip {
+      bottom: 18%;
+      left: 4%;
+
+      max-width: 12rem;
+      padding: 1.3rem 1.4rem 1rem 1.7rem;
+    }
+  }
+}

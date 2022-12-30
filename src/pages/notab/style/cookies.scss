@@ -1,0 +1,49 @@
+@use '../../../assets/styles/internals/index';
+
+.cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: none;
+  padding: 2.1rem 0;
+
+  background-color: $grey-212;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 20rem;
+
+    @include fontz(1.2re, 1.33, $white);
+  }
+
+  &__btn {
+    min-width: 9.2rem;
+
+    padding: 1.6rem;
+    border: 0.05rem solid $white;
+    border-radius: 0.6rem;
+
+    @include fontz(1.4re, 1.357, $white);
+
+    background-color: $white-10;
+    cursor: pointer;
+    transition: $anim;
+
+    &:hover {
+      color: $black;
+
+      background-color: $white;
+    }
+  }
+
+  &.active {
+    display: block;
+  }
+}
