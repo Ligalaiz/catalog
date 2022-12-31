@@ -1,11 +1,20 @@
 @use '../../../assets/styles/internals/index';
 
 .platform {
+  @media (min-width: 1439.99px) {
+    margin-bottom: 7rem;
+  }
+
   &__wrap {
     display: flex;
     column-gap: 1.5rem;
     margin-bottom: 14.5rem;
     justify-content: center;
+
+    @media (min-width: 1439.99px) {
+      justify-content: space-between;
+      margin-bottom: 8.3rem;
+    }
   }
 
   &__title {
@@ -15,16 +24,70 @@
     @include fontz(3.5rem, 1.142, $white);
     font-family: 'Montserrat';
     font-weight: 700;
+
+    @media (min-width: 1439.99px) {
+      max-width: 65rem;
+      margin-bottom: 8.8rem;
+
+      @include fontz(6.4rem, 1.09, $white);
+    }
   }
 
   &__text {
     max-width: 24rem;
 
     @include text-16;
+
+    @media (min-width: 1439.99px) {
+      position: relative;
+
+      padding-left: 10.5rem;
+      max-width: 43rem;
+
+      @include fontz(2rem, 1.35, $white);
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 10%;
+        bottom: 65%;
+
+        width: 13.9rem;
+        height: 0.4rem;
+
+        background-color: $white;
+        transform: translate(-50%, -50%) rotate(120.61deg);
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -7rem;
+
+        width: 12.5rem;
+        height: 12.5rem;
+
+        background: $blue-605;
+        filter: blur(5rem);
+      }
+    }
+  }
+
+  &__left {
+    @media (min-width: 1439.99px) {
+      padding-top: 12.5rem;
+    }
   }
 
   &__right {
     position: relative;
+
+    @media (min-width: 1439.99px) {
+      min-width: 33.288rem;
+      margin-right: 3rem;
+      height: 66.7rem;
+    }
   }
 
   &__img-wrap {
@@ -32,19 +95,35 @@
 
     width: 16.1rem;
     padding-bottom: 32.299rem;
+
+    @media (min-width: 1439.99px) {
+      width: 33.288rem;
+      padding-bottom: 66.78rem;
+    }
   }
 
   &__promo {
     margin-bottom: 3.4rem;
 
     @include title-24;
+
+    @media (min-width: 1439.99px) {
+      margin-bottom: unset;
+
+      @include fontz(3.5rem, 2, $white);
+      text-transform: uppercase;
+    }
   }
 
   &__download {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 7rem;
+
+    @media (min-width: 1439.99px) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
   }
 }
 
@@ -53,6 +132,11 @@
   flex-direction: column;
   align-items: center;
   row-gap: 2.4rem;
+
+  @media (min-width: 1439.99px) {
+    flex-direction: row;
+    column-gap: 2.7rem;
+  }
 
   &__img-wrap {
     position: relative;

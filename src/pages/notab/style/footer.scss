@@ -3,13 +3,42 @@
 .footer {
   padding-bottom: 2.4rem;
 
+  @media (min-width: 1439.99px) {
+    padding-bottom: 1.5rem;
+  }
+
   &__wrap {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 1439.99px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__contacts {
     order: 1;
+
+    @media (min-width: 1439.99px) {
+      position: relative;
+      order: unset;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -16rem;
+        top: -10rem;
+
+        width: 40.5rem;
+        height: 41.1rem;
+
+        background: linear-gradient(12.08deg, $red-f10 2.82%, $blue-006 97.06%);
+        opacity: 0.3;
+        filter: blur(12.5rem);
+        transform: rotate(5.78deg);
+      }
+    }
   }
 
   &__terms,
@@ -29,6 +58,10 @@
     @include fontz(1.4rem, 1.357, $white);
     font-family: 'Avenir';
     text-align: center;
+
+    @media (min-width: 1439.99px) {
+      text-align: unset;
+    }
   }
 
   &__mail {
@@ -54,5 +87,10 @@
     width: 7.1rem;
     height: 1.4rem;
     margin: 0 auto 1.7rem;
+
+    @media (min-width: 1439.99px) {
+      margin: unset;
+      margin-bottom: 1.7rem;
+    }
   }
 }

@@ -58,9 +58,14 @@ p {
 
 .container {
   width: 100%;
-  max-width: 96rem;
+  max-width: 124rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+
+  @media (min-width: 1439.99px) {
+    max-width: 144rem;
+    padding: 0 10rem;
+  }
 }
 
 input:focus {

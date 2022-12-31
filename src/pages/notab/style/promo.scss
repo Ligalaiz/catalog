@@ -2,4 +2,19 @@
 
 .promo {
   display: none;
+
+  @media (min-width: 1439.99px) {
+    display: block;
+    padding: 37.5rem 0 29.8rem;
+
+    background: url('../../img/promo-desc-bg.png') top center no-repeat;
+
+    &__img-wrap {
+      position: relative;
+
+      width: 85.894rem;
+      padding-bottom: 42.816rem;
+      margin: 0 auto;
+    }
+  }
 }

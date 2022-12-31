@@ -7,6 +7,14 @@
     align-items: center;
     row-gap: 3rem;
     margin-bottom: 11rem;
+
+    @media (min-width: 1439.99px) {
+      justify-content: center;
+      flex-direction: row;
+      align-items: unset;
+      column-gap: 8rem;
+      margin-bottom: 24.6rem;
+    }
   }
 
   &__left,
@@ -16,6 +24,14 @@
     padding: 4rem 3.3rem;
     max-width: 34.5rem;
     width: 100%;
+  }
+
+  &__right {
+    @media (min-width: 1439.99px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__text {
@@ -32,35 +48,78 @@
 }
 
 .vision-mission {
-    display: flex;
+  display: flex;
   flex-direction: column;
 
-  &__left {
+  @media (min-width: 1439.99px) {
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 28.3rem;
+  }
 
+  &__left {
     display: flex;
     justify-content: center;
     order: 1;
     margin-bottom: 9.4rem;
+
+    @media (min-width: 1439.99px) {
+      margin-bottom: unset;
+      order: unset;
+    }
   }
 
   &__right {
     margin-bottom: 16.3rem;
+
+    @media (min-width: 1439.99px) {
+      max-width: 35.8rem;
+      margin-bottom: unset;
+    }
   }
 
   &__title {
     margin-bottom: 2.4rem;
 
     @include title-24;
+
+    @media (min-width: 1439.99px) {
+      font-size: 5.1rem;
+      line-height: 6.2rem;
+    }
   }
 
   &__promo {
     @include text-16;
+
+    @media (min-width: 1439.99px) {
+      max-width: 30.5rem;
+
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+    }
   }
 
   &__img-wrap {
     position: relative;
 
-    width: 17.253rem;
-    padding-bottom: 34.612rem;
+    &--mb {
+      width: 17.253rem;
+      padding-bottom: 34.612rem;
+
+      @media (min-width: 1439.99px) {
+        display: none;
+      }
+    }
+
+    &--desct {
+      display: none;
+
+      @media (min-width: 1439.99px) {
+        display: block;
+        padding-bottom: 49.8rem;
+        width: 75.1rem;
+      }
+    }
   }
 }

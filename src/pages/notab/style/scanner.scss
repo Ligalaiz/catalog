@@ -2,19 +2,38 @@
 
 .scanner {
   padding-top: 22.4rem;
+  margin-bottom: 14.4rem;
 
   background: top center url('../../img/scanner-mb-bg.jpg') no-repeat;
+
+  @media (min-width: 1439.99px) {
+    padding-top: 46.7rem;
+    margin-bottom: 20.4rem;
+
+    background: top center url('../../img/scanner-desc-bg.jpg') no-repeat;
+  }
 
   &__title {
     margin-bottom: 2.4rem;
 
     @include title-24;
+
+    @media (min-width: 1439.99px) {
+      @include fontz(5.1rem, 1.215, $white);
+    }
   }
 
   &__text {
     margin-bottom: 7rem;
 
     @include text-16;
+
+    @media (min-width: 1439.99px) {
+      max-width: 31.6rem;
+      margin-bottom: unset;
+
+      @include fontz(1.8rem, 1.388, $white);
+    }
   }
 
   &__img-wrap {
@@ -28,13 +47,27 @@
     display: flex;
     flex-direction: column;
     row-gap: 5.5rem;
-    margin-bottom: 14.4rem;
+
     align-items: center;
     order: 1;
+
+    @media (min-width: 1439.99px) {
+      flex-direction: row;
+      justify-content: space-between;
+      order: unset;
+      column-gap: 5rem;
+    }
   }
 
   &__wrap {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 1439.99px) {
+      flex-direction: row;
+      justify-content: flex-start;
+      column-gap: 12.8rem;
+      align-items: flex-end;
+    }
   }
 }

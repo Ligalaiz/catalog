@@ -1,21 +1,40 @@
 @use '../../../assets/styles/internals/index';
 
 .integration {
+  @media (min-width: 1439.99px) {
+    padding-bottom: 22rem;
+    margin-bottom: 20.5rem;
+
+    background: url('../../img/integration-desc-bg.png') top right no-repeat;
+  }
+
   &__title {
     margin-bottom: 2.4rem;
 
     @include title-24;
+
+    @media (min-width: 1439.99px) {
+      @include fontz(5.1rem, 1.215, $white);
+    }
   }
 
   &__text {
     margin-bottom: 3rem;
 
     @include text-16;
+
+    @media (min-width: 1439.99px) {
+      max-width: 39.5rem;
+
+      @include fontz(1.8rem, 1.388, $white);
+    }
   }
 
-  &__right {
-    position: relative;
-    min-height: 28rem;
+  &__left {
+    @media (min-width: 1439.99px) {
+      padding-top: 8.9rem;
+      max-width: 50rem;
+    }
   }
 
   &__chart {

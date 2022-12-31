@@ -2,6 +2,11 @@
 
 .header {
   margin-bottom: 8.2rem;
+
+  @media (min-width: 1439.99px) {
+    padding: 4rem 0 0;
+    margin-bottom: 2.9rem;
+  }
 }
 
 .nav-header {
@@ -9,12 +14,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (min-width: 1439.99px) {
+      justify-content: flex-start;
+      column-gap: 10.8rem;
+    }
   }
 
   &__logo {
     display: flex;
     width: 10.2rem;
     height: 5.269rem;
+
+    @media (min-width: 1439.99px) {
+      width: 19.6rem;
+      height: 8.5rem;
+    }
   }
 
   &__img-wrap {
@@ -22,6 +37,11 @@
 
     width: 5.173rem;
     padding-bottom: 5.269rem;
+
+    @media (min-width: 1439.99px) {
+      width: 8rem;
+      padding-bottom: 8.5rem;
+    }
   }
 
   &__img-wrap-text {
@@ -29,6 +49,11 @@
 
     width: 4.641rem;
     padding-bottom: 1.196rem;
+
+    @media (min-width: 1439.99px) {
+      width: 9.6rem;
+      padding-bottom: 2.475rem;
+    }
   }
 
   &__login {
@@ -37,5 +62,33 @@
 
     @include fontz(1.4rem, 1.357, $white);
     font-weight: 500;
+
+    @media (min-width: 1439.99px) {
+      padding: 0 0.25rem;
+
+      @include fontz(1.8rem, 1.38, $white);
+      font-weight: 500;
+    }
+  }
+
+  &__item {
+    &--auth {
+      position: relative;
+
+      @media (min-width: 1439.99px) {
+        padding-left: 3.8rem;
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+
+        width: 2.6rem;
+        height: 2.5rem;
+
+        background: url('../../img/user-icon.svg') no-repeat;
+      }
+    }
   }
 }
