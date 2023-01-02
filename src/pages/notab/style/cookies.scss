@@ -44,6 +44,8 @@
   }
 
   &.active {
-    display: block;
+    // display: block;
+
+    z-index: 100;
   }
 }

@@ -7,7 +7,7 @@
   background: top center url('../../img/scanner-mb-bg.jpg') no-repeat;
 
   @media (min-width: 1439.99px) {
-    padding-top: 46.7rem;
+    padding-top: 44rem;
     margin-bottom: 20.4rem;
 
     background: top center url('../../img/scanner-desc-bg.jpg') no-repeat;
@@ -19,6 +19,8 @@
     @include title-24;
 
     @media (min-width: 1439.99px) {
+      margin-bottom: 2.1rem;
+
       @include fontz(5.1rem, 1.215, $white);
     }
   }
@@ -33,6 +35,7 @@
       margin-bottom: unset;
 
       @include fontz(1.8rem, 1.388, $white);
+      letter-spacing: 0.03rem;
     }
   }
 
@@ -41,6 +44,15 @@
 
     width: 28.708rem;
     padding-bottom: 57.593rem;
+
+    @media (min-width: 1439.99px) {
+      width: 33.3rem;
+      padding-bottom: 66.8rem;
+    }
+  }
+
+  &__right {
+    padding-bottom: 6.9rem;
   }
 
   &__left {
@@ -55,7 +67,7 @@
       flex-direction: row;
       justify-content: space-between;
       order: unset;
-      column-gap: 5rem;
+      column-gap: 4.9rem;
     }
   }
 

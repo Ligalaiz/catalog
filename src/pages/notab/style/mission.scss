@@ -13,7 +13,7 @@
       flex-direction: row;
       align-items: unset;
       column-gap: 8rem;
-      margin-bottom: 24.6rem;
+      margin-bottom: 22.8rem;
     }
   }
 
@@ -24,6 +24,11 @@
     padding: 4rem 3.3rem;
     max-width: 34.5rem;
     width: 100%;
+
+    @media (min-width: 1439.99px) {
+      max-width: 50.5rem;
+      padding: 6.6rem 12.4rem 5.8rem 5.4rem;
+    }
   }
 
   &__right {
@@ -39,11 +44,31 @@
 
     @include title-24;
     font-family: inherit;
+
+    @media (min-width: 1439.99px) {
+      margin-bottom: 2.9rem;
+
+      @include fontz(3rem, 1.366, $white);
+      letter-spacing: 0.07rem;
+
+      &--right {
+        margin-bottom: 3rem;
+      }
+    }
   }
 
   &__link {
     @include fontz(1.8rem, 1.38, $white);
     text-decoration-line: underline;
+
+    @media (min-width: 1439.99px) {
+      @include fontz(2.4rem, 1.375, $white);
+      letter-spacing: 0.09rem;
+
+      &--right {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 
@@ -52,9 +77,10 @@
   flex-direction: column;
 
   @media (min-width: 1439.99px) {
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
-    margin-bottom: 28.3rem;
+    column-gap: 7rem;
+    margin-bottom: 29.8rem;
   }
 
   &__left {
@@ -64,6 +90,7 @@
     margin-bottom: 9.4rem;
 
     @media (min-width: 1439.99px) {
+      padding-top: 2rem;
       margin-bottom: unset;
       order: unset;
     }
@@ -73,17 +100,40 @@
     margin-bottom: 16.3rem;
 
     @media (min-width: 1439.99px) {
+      position: relative;
+
       max-width: 35.8rem;
+      padding-top: 1.2rem;
       margin-bottom: unset;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 7rem;
+
+        width: 8.5rem;
+        height: 8.5rem;
+
+        background: $purple;
+        opacity: 0.7;
+        filter: blur(5rem);
+        z-index: 1;
+      }
     }
   }
 
   &__title {
+    position: relative;
+    z-index: 10;
+
     margin-bottom: 2.4rem;
 
     @include title-24;
 
     @media (min-width: 1439.99px) {
+      margin-bottom: 2.1rem;
+
       font-size: 5.1rem;
       line-height: 6.2rem;
     }
@@ -93,10 +143,10 @@
     @include text-16;
 
     @media (min-width: 1439.99px) {
-      max-width: 30.5rem;
+      max-width: 32rem;
 
-      font-size: 1.8rem;
-      line-height: 2.5rem;
+      @include fontz(1.8rem, 1.388, $white);
+      letter-spacing: 0.04rem;
     }
   }
 
@@ -116,8 +166,11 @@
       display: none;
 
       @media (min-width: 1439.99px) {
+        position: relative;
+        left: -10rem;
+
         display: block;
-        padding-bottom: 49.8rem;
+        padding-bottom: 50.8rem;
         width: 75.1rem;
       }
     }

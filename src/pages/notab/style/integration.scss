@@ -2,18 +2,21 @@
 
 .integration {
   @media (min-width: 1439.99px) {
-    padding-bottom: 22rem;
-    margin-bottom: 20.5rem;
-
-    background: url('../../img/integration-desc-bg.png') top right no-repeat;
+    margin-bottom: 19.3rem;
   }
 
   &__title {
+    position: relative;
+    z-index: 10;
+
+    max-width: 50rem;
     margin-bottom: 2.4rem;
 
     @include title-24;
 
     @media (min-width: 1439.99px) {
+      margin-bottom: 3.1rem;
+
       @include fontz(5.1rem, 1.215, $white);
     }
   }
@@ -24,16 +27,38 @@
     @include text-16;
 
     @media (min-width: 1439.99px) {
+      position: relative;
+      z-index: 10;
+
       max-width: 39.5rem;
 
       @include fontz(1.8rem, 1.388, $white);
+      letter-spacing: 0.04rem;
     }
   }
 
   &__left {
     @media (min-width: 1439.99px) {
-      padding-top: 8.9rem;
-      max-width: 50rem;
+      position: relative;
+
+      padding: 9.2rem 0 22rem;
+
+      background: url('../../img/integration-desc-bg.png') 97.3% 0 no-repeat;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -9rem;
+        left: -19rem;
+
+        width: 42.621rem;
+        height: 43.835rem;
+
+        background: linear-gradient(12.08deg, $purple 2.82%, $blue-006 97.06%);
+        opacity: 0.1;
+        filter: blur(12.5rem);
+        transform: rotate(5.78deg);
+      }
     }
   }
 

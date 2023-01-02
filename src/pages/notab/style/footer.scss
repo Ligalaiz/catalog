@@ -33,7 +33,7 @@
         width: 40.5rem;
         height: 41.1rem;
 
-        background: linear-gradient(12.08deg, $red-f10 2.82%, $blue-006 97.06%);
+        background: linear-gradient(12.08deg, $purple 2.82%, $blue-006 97.06%);
         opacity: 0.3;
         filter: blur(12.5rem);
         transform: rotate(5.78deg);
@@ -60,6 +60,9 @@
     text-align: center;
 
     @media (min-width: 1439.99px) {
+      position: relative;
+      z-index: 10;
+
       text-align: unset;
     }
   }

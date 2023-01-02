@@ -5,7 +5,7 @@
 
   @media (min-width: 1439.99px) {
     padding: 4rem 0 0;
-    margin-bottom: 2.9rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -27,6 +27,7 @@
     height: 5.269rem;
 
     @media (min-width: 1439.99px) {
+      justify-content: space-between;
       width: 19.6rem;
       height: 8.5rem;
     }
@@ -39,8 +40,8 @@
     padding-bottom: 5.269rem;
 
     @media (min-width: 1439.99px) {
-      width: 8rem;
-      padding-bottom: 8.5rem;
+      width: 7.6rem;
+      height: 7.4rem;
     }
   }
 

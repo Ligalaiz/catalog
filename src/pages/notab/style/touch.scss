@@ -10,11 +10,32 @@
     text-align: center;
 
     @media (min-width: 1439.99px) {
+      position: relative;
+      z-index: 10;
+
       @include fontz(5.1rem, 1.215, $white);
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -9rem;
+  left: 25rem;
+
+        width: 24.704rem;
+        height: 25.045rem;
+
+        background: linear-gradient(12.08deg, $purple 2.82%, $blue-006 97.06%);
+        opacity: 0.3;
+        filter: blur(12.5rem);
+        transform: rotate(5.78deg);
+      }
     }
   }
 
   &__text {
+    position: relative;
+    z-index: 10;
+    
     max-width: 30.1rem;
     margin: 0 auto 4.9rem;
 

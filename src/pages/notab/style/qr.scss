@@ -5,6 +5,7 @@
   margin-bottom: 11.6rem;
 
   @media (min-width: 1439.99px) {
+    padding-top: 23.7rem;
     margin-bottom: 4.1rem;
 
     background: top center url('../../img/qr-desc-bg.png') no-repeat;
@@ -25,9 +26,10 @@
     @media (min-width: 1439.99px) {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      max-width: 31.5rem;
+      justify-content: flex-end;
+      max-width: 46rem;
       padding-top: 5rem;
+      padding-left: 8rem;
 
       background: none;
     }
@@ -46,10 +48,10 @@
 
     @media (min-width: 1439.99px) {
       flex-direction: row;
-      column-gap: 8rem;
       padding-top: unset;
       margin-bottom: unset;
       align-items: unset;
+      column-gap: 3.8rem;
 
       background: none;
     }
@@ -71,7 +73,11 @@
     @include text-16;
 
     @media (min-width: 1439.99px) {
+      max-width: 29.7rem;
+      margin-bottom: 5.5rem;
+
       @include fontz(1.8rem, 1.388, $white);
+      letter-spacing: 0.06rem;
     }
   }
 
@@ -80,6 +86,11 @@
 
     width: 28.098rem;
     height: 56.368rem;
+
+    @media (min-width: 1439.99px) {
+      width: 33.2rem;
+      height: 66.8rem;
+    }
 
     &--sign {
       width: 8.4rem;
@@ -116,10 +127,29 @@
   background: no-repeat url('../../img/generate-mb-bg.png') center 60% / contain;
 
   @media (min-width: 1439.99px) {
-    padding-top: 35rem;
-    margin-bottom: 19.2rem;
+    position: relative;
 
-    background: no-repeat url('../../img/generate-desc-bg.png') center 32% / cover;
+    max-width: 144rem;
+    padding-top: 35rem;
+    margin: 0 auto 19.2rem;
+
+    background: no-repeat url('../../img/generate-desc-bg.png') center 63% / contain;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 102.245rem;
+      height: 95.207rem;
+
+      background: linear-gradient(12.08deg, $purple 2.82%, $blue-006 97.06%);
+      opacity: 0.15;
+      filter: blur(15.5784rem);
+      border-radius: 47.6034rem;
+      transform: translate(-50%, -50%) rotate(-0.55deg);
+    }
   }
 
   &__wrap {

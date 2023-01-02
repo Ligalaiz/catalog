@@ -12,8 +12,36 @@
     justify-content: center;
 
     @media (min-width: 1439.99px) {
+      position: relative;
+
       justify-content: space-between;
       margin-bottom: 8.3rem;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+
+        width: 66.263rem;
+        height: 78.303rem;
+
+        filter: blur(12.5rem);
+      }
+
+      &:before {
+        top: -29rem;
+        right: -16rem;
+
+        background: $purple-fa0;
+        transform: rotate(-105.26deg);
+      }
+
+      &:after {
+        top: 13rem;
+        right: 16rem;
+
+        background: $black-080;
+      }
     }
   }
 
@@ -27,7 +55,7 @@
 
     @media (min-width: 1439.99px) {
       max-width: 65rem;
-      margin-bottom: 8.8rem;
+      margin-bottom: 12.4rem;
 
       @include fontz(6.4rem, 1.09, $white);
     }
@@ -42,15 +70,16 @@
       position: relative;
 
       padding-left: 10.5rem;
-      max-width: 43rem;
+      max-width: 48rem;
 
       @include fontz(2rem, 1.35, $white);
+      letter-spacing: 0.6px;
 
       &:before {
         content: '';
         position: absolute;
-        left: 10%;
-        bottom: 65%;
+        left: 8%;
+        bottom: 70%;
 
         width: 13.9rem;
         height: 0.4rem;
@@ -76,17 +105,21 @@
 
   &__left {
     @media (min-width: 1439.99px) {
-      padding-top: 12.5rem;
+      position: relative;
+      z-index: 10;
+
+      padding-top: 13rem;
     }
   }
 
   &__right {
     position: relative;
+    z-index: 10;
 
     @media (min-width: 1439.99px) {
-      min-width: 33.288rem;
       margin-right: 3rem;
       height: 66.7rem;
+      min-width: 38.7rem;
     }
   }
 
@@ -110,7 +143,7 @@
     @media (min-width: 1439.99px) {
       margin-bottom: unset;
 
-      @include fontz(3.5rem, 2, $white);
+      @include fontz(3.5rem, 1.6, $white);
       text-transform: uppercase;
     }
   }
@@ -121,6 +154,9 @@
     align-items: center;
 
     @media (min-width: 1439.99px) {
+      position: relative;
+      z-index: 10;
+
       justify-content: space-between;
       flex-direction: row;
     }
@@ -136,6 +172,8 @@
   @media (min-width: 1439.99px) {
     flex-direction: row;
     column-gap: 2.7rem;
+    max-width: 44rem;
+    width: 100%;
   }
 
   &__img-wrap {
@@ -156,7 +194,7 @@
   &__google {
     display: block;
     width: 18.5rem;
-    height: 6rem;
+    height: 5rem;
 
     border-radius: 0.8rem;
     border: 0.1rem solid $white;
@@ -164,10 +202,19 @@
 
   &__apple {
     padding: 1.4rem 2.5rem;
-    // margin-bottom: 2.4rem;
+
+    @media (min-width: 1439.99px) {
+      padding: 1rem 1.3rem;
+      width: 16.5rem;
+    }
   }
 
   &__google {
     padding: 1.3rem;
+
+    @media (min-width: 1439.99px) {
+      width: 18.5rem;
+      padding: 0.6rem 1.2rem;
+    }
   }
 }

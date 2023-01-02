@@ -3,6 +3,26 @@
 .ordering {
   margin-bottom: 9.5rem;
 
+  & .container {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 18rem;
+      right: -16rem;
+
+      width: 28.692rem;
+      height: 26.717rem;
+
+      background: linear-gradient(12.08deg, $purple 2.82%, $blue-006 97.06%);
+      opacity: 0.2;
+      filter: blur(12.5rem);
+      transform: rotate(5.78deg);
+      z-index: 1;
+    }
+  }
+
   &__wrap {
     position: relative;
 
@@ -11,6 +31,9 @@
     background: url('../../img/phone-wrapped.png') center/contain no-repeat;
 
     @media (min-width: 1439.99px) {
+      position: relative;
+      z-index: 10;
+
       width: 86.8rem;
       height: 103.821rem;
       margin: 0 auto;
@@ -19,6 +42,9 @@
 
   &__head {
     @media (min-width: 1439.99px) {
+      position: relative;
+      z-index: 10;
+
       max-width: 42.1rem;
       margin-left: auto;
     }
