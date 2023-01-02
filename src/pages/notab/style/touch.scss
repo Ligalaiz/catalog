@@ -3,6 +3,10 @@
 .touch {
   margin-bottom: 6.4rem;
 
+  @media (min-width: 1439.99px) {
+    margin-bottom: 15rem;
+  }
+
   &__title {
     margin-bottom: 2.4rem;
 
@@ -13,13 +17,17 @@
       position: relative;
       z-index: 10;
 
+      padding-top: 0.4rem;
+      margin-bottom: 2.2rem;
+
       @include fontz(5.1rem, 1.215, $white);
+      letter-spacing: 0.05rem;
 
       &:before {
         content: '';
         position: absolute;
         top: -9rem;
-  left: 25rem;
+        left: 25rem;
 
         width: 24.704rem;
         height: 25.045rem;
@@ -35,7 +43,7 @@
   &__text {
     position: relative;
     z-index: 10;
-    
+
     max-width: 30.1rem;
     margin: 0 auto 4.9rem;
 
@@ -43,10 +51,11 @@
     text-align: center;
 
     @media (min-width: 1439.99px) {
-      max-width: 50.8rem;
-      margin-bottom: 8.2rem;
+      max-width: 59rem;
+      margin-bottom: 8rem;
 
       @include fontz(1.8rem, 1.388, $white);
+      letter-spacing: 0.05rem;
     }
   }
 
@@ -70,6 +79,8 @@
     margin-bottom: 7.4rem;
 
     @media (min-width: 1439.99px) {
+      row-gap: 2.3rem;
+
       max-width: 81.8rem;
       margin: 0 auto 9.1rem;
     }
@@ -82,7 +93,7 @@
     border-radius: 1rem;
 
     @media (min-width: 1439.99px) {
-      padding: 2.9rem 2.3rem;
+      padding: 2.9rem 2.5rem 2.7rem;
 
       @include fontz(1.8rem, 1.388, $black);
     }
@@ -98,6 +109,11 @@
 
     &--message {
       margin-bottom: 4rem;
+
+      @media (min-width: 1439.99px) {
+        padding: 2.9rem 2.5rem 4.4rem;
+        margin-bottom: 3.5rem;
+      }
     }
   }
 
@@ -131,7 +147,8 @@
 
   &__links {
     @media (min-width: 1439.99px) {
-      max-width: 40rem;
+      max-width: 61rem;
+      justify-content: space-between;
       margin: 0 auto;
     }
   }
@@ -141,5 +158,39 @@
 
     @include title-24;
     text-align: center;
+
+    @media (min-width: 1439.99px) {
+      margin-bottom: 3.2rem;
+
+      text-transform: uppercase;
+      letter-spacing: -0.05rem;
+    }
+  }
+
+  &__download {
+    padding-top: 0.3rem;
+  }
+
+  & .links-bar__img-wrap--apple {
+    width: 23rem;
+    height: 5.3rem;
+  }
+
+  & .links-bar__img-wrap--google {
+    width: 26.5rem;
+    height: 5.7rem;
+  }
+
+  & .links-bar__apple {
+    height: 8rem;
+    width: 25.8rem;
+    border-radius: 1.3rem;
+    padding: 1.6rem 1.3rem 1rem;
+  }
+
+  & .links-bar__google {
+    width: 29rem;
+    height: 8rem;
+    padding: 1.2rem 1.2rem;
   }
 }

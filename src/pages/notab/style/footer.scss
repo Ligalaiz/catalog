@@ -24,6 +24,8 @@
       position: relative;
       order: unset;
 
+      padding-top: 0.8rem;
+
       &:before {
         content: '';
         position: absolute;
@@ -51,6 +53,11 @@
 
   &__terms {
     margin-bottom: 1.4rem;
+
+    @media (min-width: 1439.99px) {
+      padding-right: 0.7rem;
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__mail,
@@ -63,17 +70,29 @@
       position: relative;
       z-index: 10;
 
+      @include fontz(1.8rem, 1.388, $white);
       text-align: unset;
     }
   }
 
   &__mail {
     margin-bottom: 0.9rem;
+
+    @media (min-width: 1439.99px) {
+      margin-bottom: 1.9rem;
+    }
   }
 
   &__link {
     @include fontz(1.4rem, 1.357, $white);
     font-weight: 500;
+
+    @media (min-width: 1439.99px) {
+      display: block;
+
+      @include fontz(1.8rem, 1.388, $white);
+      letter-spacing: 0.03rem;
+    }
   }
 
   &__date {
@@ -82,6 +101,10 @@
 
   &__policy {
     margin-bottom: 5.8rem;
+
+    @media (min-width: 1439.99px) {
+      padding-top: 0.2rem;
+    }
   }
 
   &__img-wrap {
@@ -92,8 +115,10 @@
     margin: 0 auto 1.7rem;
 
     @media (min-width: 1439.99px) {
+      width: 8.1rem;
+      height: 1.7rem;
       margin: unset;
-      margin-bottom: 1.7rem;
+      margin-bottom: 1.5rem;
     }
   }
 }

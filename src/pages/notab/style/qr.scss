@@ -131,9 +131,9 @@
 
     max-width: 144rem;
     padding-top: 35rem;
-    margin: 0 auto 19.2rem;
+    margin: 0 auto 17.2rem;
 
-    background: no-repeat url('../../img/generate-desc-bg.png') center 63% / contain;
+    background: no-repeat url('../../img/generate-desc-bg.png') center 64% / contain;
 
     &:before {
       content: '';
@@ -165,6 +165,8 @@
     margin: 0 auto;
 
     @media (min-width: 1439.99px) {
+      left: 1rem;
+
       width: 33.256rem;
       height: 66.715rem;
     }
@@ -185,6 +187,7 @@
 
     @media (min-width: 1439.99px) {
       order: unset;
+      padding-top: 3.2rem;
     }
   }
 
@@ -208,9 +211,10 @@
 
     @media (min-width: 1439.99px) {
       max-width: 29.2rem;
-      margin-bottom: unset;
+      margin-bottom: 1rem;
 
       @include fontz(1.8rem, 1.388, $white);
+      letter-spacing: 0.02rem;
     }
   }
 
@@ -225,8 +229,8 @@
 
     @media (min-width: 1439.99px) {
       bottom: unset;
-      top: 36%;
-      right: 10.5%;
+      top: 40.5%;
+      right: 13%;
 
       @include fontz(2.1rem, 1.238, $white);
     }
@@ -242,10 +246,12 @@
 
     @media (min-width: 1439.99px) {
       bottom: unset;
-      top: 23%;
-      right: 25%;
+      top: 27.5%;
+      right: 26.5%;
 
-      transform: rotate(-40deg);
+      transform: rotate(-37deg);
     }
   }
 }
+
+

@@ -1,7 +1,7 @@
 @use '../../../assets/styles/internals/index';
 
 .ordering {
-  margin-bottom: 9.5rem;
+  padding-top: 1.8rem;
 
   & .container {
     position: relative;
@@ -34,9 +34,11 @@
       position: relative;
       z-index: 10;
 
-      width: 86.8rem;
+      width: 100%;
       height: 103.821rem;
       margin: 0 auto;
+
+      background: url('../../img/phone-wrapped.png') 56.5% 50% / contain no-repeat;
     }
   }
 
@@ -45,7 +47,7 @@
       position: relative;
       z-index: 10;
 
-      max-width: 42.1rem;
+      max-width: 48.1rem;
       margin-left: auto;
     }
   }
@@ -58,18 +60,20 @@
 
     @media (min-width: 1439.99px) {
       max-width: unset;
+      margin-bottom: 2.1rem;
 
       @include fontz(5.1rem, 1.215, $white);
     }
   }
 
   &__subtitle {
-    margin-bottom: 7.5rem;
-
     @include text-16;
 
     @media (min-width: 1439.99px) {
+      padding-left: 0.5rem;
+
       @include fontz(1.8rem, 1.388, $white);
+      letter-spacing: 0.05rem;
     }
   }
 
@@ -93,12 +97,18 @@
 
     background-color: $black;
 
+    @media (min-width: 1439.99px) {
+      border-radius: 1.7rem;
+    }
+
     &--cards,
     &--cards2 {
       max-width: 16.9rem;
 
       @media (min-width: 1439.99px) {
-        max-width: 28.5rem;
+        border-radius: 1.7rem;
+
+        letter-spacing: 0.03rem;
       }
     }
 
@@ -107,6 +117,14 @@
       left: 6.6%;
 
       padding: 1rem 1rem 1rem 1.7rem;
+
+      @media (min-width: 1439.99px) {
+        left: 15%;
+        top: 34.5%;
+
+        max-width: 28.3rem;
+        padding: 2.9rem 1rem 3rem 2.6rem;
+      }
     }
 
     &--cards2 {
@@ -114,6 +132,14 @@
       right: -3.7%;
 
       padding: 1.2rem 1rem 1.3rem 1.7rem;
+
+      @media (min-width: 1439.99px) {
+        top: 19.6%;
+        right: 23.2%;
+
+        padding: 2.2rem 1rem 2.1rem 2.1rem;
+        max-width: 26.7rem;
+      }
     }
 
     &--split {
@@ -124,7 +150,13 @@
       padding: 1.2rem 1rem 1.2rem 2rem;
 
       @media (min-width: 1439.99px) {
+        bottom: 29.8%;
+        right: 12%;
+
         max-width: 18.5rem;
+        padding: 1.8rem 1rem 1.8rem 2.1rem;
+
+        letter-spacing: 0.04rem;
       }
     }
 
@@ -136,7 +168,14 @@
       padding: 1.3rem 1.4rem 1rem 1.7rem;
 
       @media (min-width: 1439.99px) {
-        max-width: 17.5rem;
+        bottom: 23.5%;
+        left: 33%;
+
+        max-width: 20.5rem;
+        border-radius: 1.7rem;
+        padding: 1.7rem 2.4rem 2rem 2.4rem;
+
+        letter-spacing: 0.04rem;
       }
     }
   }
