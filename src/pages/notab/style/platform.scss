@@ -3,7 +3,7 @@
 .platform {
   margin-bottom: 6.9rem;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     margin-bottom: 7rem;
   }
 
@@ -13,10 +13,20 @@
     margin-bottom: 11.4rem;
     justify-content: flex-start;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 400.99px) {
+      justify-content: center;
+      padding-right: 11rem;
+    }
+    
+    @media (min-width: 575.99px) {
+      margin-bottom: 32.4rem;
+    }
+
+    @media (min-width: 767.99px) {
       position: relative;
 
       justify-content: space-between;
+      padding-right: unset;
       margin-bottom: 8.3rem;
 
       &:before,
@@ -55,7 +65,13 @@
     font-family: 'Montserrat';
     font-weight: 700;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 575.99px) {
+      max-width: 40rem;
+
+      @include fontz(4.2rem, 1.09, $white);
+    }
+
+    @media (min-width: 767.99px) {
       max-width: 65rem;
       margin-bottom: 12.4rem;
 
@@ -69,7 +85,13 @@
     @include text-16;
     letter-spacing: 0.06rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 575.99px) {
+      max-width: 32rem;
+
+      @include fontz(1.8rem, 1.35, $white);
+    }
+
+    @media (min-width: 767.99px) {
       position: relative;
 
       padding-left: 10.5rem;
@@ -108,7 +130,7 @@
   &__left {
     padding-top: 3.6rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       position: relative;
       z-index: 10;
 
@@ -120,7 +142,7 @@
     position: relative;
     z-index: 10;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       margin-right: 3rem;
       height: 66.7rem;
       min-width: 38.7rem;
@@ -133,7 +155,12 @@
     width: 16.1rem;
     padding-bottom: 32.299rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 575.99px) {
+      width: 27.288rem;
+      padding-bottom: 55.78rem;
+    }
+
+    @media (min-width: 767.99px) {
       width: 33.288rem;
       padding-bottom: 66.78rem;
     }
@@ -145,7 +172,7 @@
     @include title-24;
     text-transform: uppercase;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       margin-bottom: unset;
 
       @include fontz(3.5rem, 1.8, $white);
@@ -157,7 +184,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       position: relative;
       z-index: 10;
 
@@ -173,7 +200,7 @@
   align-items: center;
   row-gap: 2.2rem;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     flex-direction: row;
     column-gap: 2.7rem;
     max-width: 44rem;
@@ -203,7 +230,7 @@
     border-radius: 0.8rem;
     border: 0.1rem solid $white;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       height: 5.2rem;
     }
   }
@@ -211,7 +238,7 @@
   &__apple {
     padding: 1.4rem 2.5rem 1.4rem 2.4rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       padding: 1rem 1.3rem;
       width: 16.5rem;
     }
@@ -220,7 +247,7 @@
   &__google {
     padding: 1.3rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       width: 18.5rem;
       padding: 0.6rem 1.2rem;
     }

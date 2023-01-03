@@ -4,13 +4,11 @@
   padding-top: 22.6rem;
   margin-bottom: 14.6rem;
 
-  background: top center url('../../img/scanner-mb-bg.jpg') no-repeat;
+  background: url('../../img/scanner-desc-bg.jpg') 50% 0 / contain no-repeat;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     padding-top: 44rem;
     margin-bottom: 20.4rem;
-
-    background: top center url('../../img/scanner-desc-bg.jpg') no-repeat;
   }
 
   &__title {
@@ -18,7 +16,11 @@
 
     @include title-24;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 575.99px) {
+      @include fontz(4.2rem, 1.09, $white);
+    }
+
+    @media (min-width: 767.99px) {
       margin-bottom: 2.1rem;
 
       @include fontz(5.1rem, 1.215, $white);
@@ -29,7 +31,11 @@
     @include text-16;
     letter-spacing: 0.03rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 575.99px) {
+      @include fontz(1.7rem, 1.35, $white);
+    }
+
+    @media (min-width: 767.99px) {
       max-width: 31.6rem;
 
       @include fontz(1.8rem, 1.388, $white);
@@ -42,7 +48,7 @@
     width: 28.708rem;
     padding-bottom: 57.593rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       width: 33.3rem;
       padding-bottom: 66.8rem;
     }
@@ -50,6 +56,14 @@
 
   &__right {
     padding-bottom: 6.9rem;
+
+    @media (min-width: 767.99px) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 991.99px) {
+      margin: unset;
+    }
   }
 
   &__left {
@@ -60,11 +74,15 @@
     align-items: center;
     order: 1;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 991.99px) {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       order: unset;
       column-gap: 4.9rem;
+    }
+
+    @media (min-width: 1199.99px) {
+      justify-content: space-between;
     }
   }
 
@@ -72,10 +90,15 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 1439.99px) {
-      flex-direction: row;
-      justify-content: flex-start;
+    @media (min-width: 991.99px) {
       column-gap: 12.8rem;
+      align-items: center;
+      row-gap: 9rem;
+    }
+
+    @media (min-width: 1199.99px) {
+      justify-content: flex-start;
+      flex-direction: row;
       align-items: flex-end;
     }
   }
