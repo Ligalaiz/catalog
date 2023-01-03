@@ -1,8 +1,15 @@
 @use '../../../assets/styles/internals/index';
 
 .integration {
+  padding-bottom: 24.6rem;
+
+  background: url('../../img/integration-mb-bg.png') 50% 100% no-repeat;
+
   @media (min-width: 1439.99px) {
+    padding-bottom: unset;
     margin-bottom: 19.3rem;
+
+    background: none;
   }
 
   &__title {
@@ -25,6 +32,7 @@
     margin-bottom: 3rem;
 
     @include text-16;
+    letter-spacing: 0.04rem;
 
     @media (min-width: 1439.99px) {
       position: relative;
@@ -33,7 +41,6 @@
       max-width: 39.5rem;
 
       @include fontz(1.8rem, 1.388, $white);
-      letter-spacing: 0.04rem;
     }
   }
 

@@ -1,14 +1,26 @@
 @use '../../../assets/styles/internals/index';
 
 .qr {
-  padding-top: 22.5rem;
-  margin-bottom: 11.6rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 26.2rem;
+  margin-bottom: 10rem;
+
+  background: url('../../img/qr-mb-bg.jpg') 50% 1.6% no-repeat;
 
   @media (min-width: 1439.99px) {
     padding-top: 23.7rem;
-    margin-bottom: 4.1rem;
+    margin-bottom: 17.1rem;
 
     background: top center url('../../img/qr-desc-bg.png') no-repeat;
+  }
+}
+
+.code-qr {
+  background: url('../../img/order-mb-bg.png') 100% 23% no-repeat;
+
+  @media (min-width: 1439.99px) {
+    background: none;
   }
 
   &__wrap {
@@ -19,10 +31,6 @@
   }
 
   &__left {
-    padding-top: 22.7rem;
-
-    background: top center url('../../img/qr-mb-bg.jpg') no-repeat;
-
     @media (min-width: 1439.99px) {
       display: flex;
       flex-direction: column;
@@ -41,10 +49,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 11.4rem;
-    margin-bottom: 13rem;
-
-    background: top right url('../../img/order-mb-bg.png') no-repeat;
+    padding-top: 20.4rem;
+    margin-bottom: 8.2rem;
+    row-gap: 5rem;
 
     @media (min-width: 1439.99px) {
       flex-direction: row;
@@ -68,9 +75,11 @@
   }
 
   &__text {
-    margin-bottom: 5rem;
+    max-width: 31rem;
+    margin-bottom: 4.8rem;
 
     @include text-16;
+    letter-spacing: 0.06rem;
 
     @media (min-width: 1439.99px) {
       max-width: 29.7rem;
@@ -100,17 +109,21 @@
     }
 
     &--order {
-      margin-bottom: 5rem;
+      margin: 0 auto 5rem;
 
       @media (min-width: 1439.99px) {
-        margin-bottom: unset;
+        margin: unset;
       }
     }
 
     &--cooking {
+      margin: 0 auto 5rem;
+
       @media (min-width: 1439.99px) {
         position: relative;
         top: 34.1rem;
+
+        margin: unset;
       }
     }
   }
@@ -124,14 +137,15 @@
   display: flex;
   flex-direction: column;
 
-  background: no-repeat url('../../img/generate-mb-bg.png') center 60% / contain;
+  background: no-repeat url('../../img/generate-mb-bg.png') center 59% / contain;
 
   @media (min-width: 1439.99px) {
     position: relative;
 
     max-width: 144rem;
+    width: 100%;
     padding-top: 35rem;
-    margin: 0 auto 17.2rem;
+    margin: 0 auto;
 
     background: no-repeat url('../../img/generate-desc-bg.png') center 64% / contain;
 
@@ -205,9 +219,11 @@
   }
 
   &__text {
+    max-width: 26rem;
     margin-bottom: 7rem;
 
     @include text-16;
+    letter-spacing: 0.05rem;
 
     @media (min-width: 1439.99px) {
       max-width: 29.2rem;
@@ -220,10 +236,10 @@
 
   &__notice {
     position: absolute;
-    right: 8%;
+    right: 5.4%;
     bottom: 0;
 
-    @include fontz(1.8rem, 1.222, $white);
+    @include fontz(1.8rem, 1.2, $white);
     font-family: 'Montserrat';
     font-weight: 700;
 
@@ -238,8 +254,8 @@
 
   &__arrow {
     position: absolute;
-    bottom: 10%;
-    right: 8%;
+    bottom: 8%;
+    right: 7.4%;
 
     width: 3.4rem;
     height: 10.2rem;
@@ -253,5 +269,3 @@
     }
   }
 }
-
-

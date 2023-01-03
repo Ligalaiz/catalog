@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     row-gap: 3rem;
-    margin-bottom: 11rem;
+    margin-bottom: 11.2rem;
 
     @media (min-width: 1439.99px) {
       justify-content: center;
@@ -21,7 +21,7 @@
   &__right {
     border: 2px solid $white-50;
     border-radius: 2.13671rem;
-    padding: 4rem 3.3rem;
+    padding: 3.8rem 4.3rem 3.7rem 3.1rem;
     max-width: 34.5rem;
     width: 100%;
 
@@ -40,10 +40,12 @@
   }
 
   &__text {
-    margin-bottom: 3rem;
+    margin-bottom: 2.9rem;
 
     @include title-24;
     font-family: inherit;
+    letter-spacing: 0.06rem;
+    line-height: 1.4;
 
     @media (min-width: 1439.99px) {
       margin-bottom: 2.9rem;
@@ -97,7 +99,7 @@
   }
 
   &__right {
-    margin-bottom: 16.3rem;
+    margin-bottom: 16.1rem;
 
     @media (min-width: 1439.99px) {
       position: relative;
@@ -140,7 +142,10 @@
   }
 
   &__promo {
+    max-width: 30rem;
+
     @include text-16;
+    letter-spacing: 0.05rem;
 
     @media (min-width: 1439.99px) {
       max-width: 32rem;

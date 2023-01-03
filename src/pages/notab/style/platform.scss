@@ -1,6 +1,8 @@
 @use '../../../assets/styles/internals/index';
 
 .platform {
+  margin-bottom: 6.9rem;
+
   @media (min-width: 1439.99px) {
     margin-bottom: 7rem;
   }
@@ -8,8 +10,8 @@
   &__wrap {
     display: flex;
     column-gap: 1.5rem;
-    margin-bottom: 14.5rem;
-    justify-content: center;
+    margin-bottom: 11.4rem;
+    justify-content: flex-start;
 
     @media (min-width: 1439.99px) {
       position: relative;
@@ -47,7 +49,7 @@
 
   &__title {
     max-width: 20.7rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.1rem;
 
     @include fontz(3.5rem, 1.142, $white);
     font-family: 'Montserrat';
@@ -65,6 +67,7 @@
     max-width: 24rem;
 
     @include text-16;
+    letter-spacing: 0.06rem;
 
     @media (min-width: 1439.99px) {
       position: relative;
@@ -73,7 +76,6 @@
       max-width: 48rem;
 
       @include fontz(2rem, 1.35, $white);
-      letter-spacing: 0.6px;
 
       &:before {
         content: '';
@@ -104,11 +106,13 @@
   }
 
   &__left {
+    padding-top: 3.6rem;
+
     @media (min-width: 1439.99px) {
       position: relative;
       z-index: 10;
 
-      padding-top: 13rem;
+      padding-top: 13.4rem;
     }
   }
 
@@ -136,15 +140,15 @@
   }
 
   &__promo {
-    margin-bottom: 3.4rem;
+    margin-bottom: 3.2rem;
 
     @include title-24;
+    text-transform: uppercase;
 
     @media (min-width: 1439.99px) {
       margin-bottom: unset;
 
-      @include fontz(3.5rem, 1.6, $white);
-      text-transform: uppercase;
+      @include fontz(3.5rem, 1.8, $white);
     }
   }
 
@@ -167,7 +171,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2.4rem;
+  row-gap: 2.2rem;
 
   @media (min-width: 1439.99px) {
     flex-direction: row;
@@ -180,8 +184,8 @@
     position: relative;
 
     &--apple {
-      width: 13.6rem;
-      height: 3.2rem;
+      width: 13.7rem;
+      height: 3.4rem;
     }
 
     &--google {
@@ -194,14 +198,18 @@
   &__google {
     display: block;
     width: 18.5rem;
-    height: 5rem;
+    height: 6.2rem;
 
     border-radius: 0.8rem;
     border: 0.1rem solid $white;
+
+    @media (min-width: 1439.99px) {
+      height: 5.2rem;
+    }
   }
 
   &__apple {
-    padding: 1.4rem 2.5rem;
+    padding: 1.4rem 2.5rem 1.4rem 2.4rem;
 
     @media (min-width: 1439.99px) {
       padding: 1rem 1.3rem;

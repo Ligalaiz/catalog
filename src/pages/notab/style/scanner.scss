@@ -1,8 +1,8 @@
 @use '../../../assets/styles/internals/index';
 
 .scanner {
-  padding-top: 22.4rem;
-  margin-bottom: 14.4rem;
+  padding-top: 22.6rem;
+  margin-bottom: 14.6rem;
 
   background: top center url('../../img/scanner-mb-bg.jpg') no-repeat;
 
@@ -26,16 +26,13 @@
   }
 
   &__text {
-    margin-bottom: 7rem;
-
     @include text-16;
+    letter-spacing: 0.03rem;
 
     @media (min-width: 1439.99px) {
       max-width: 31.6rem;
-      margin-bottom: unset;
 
       @include fontz(1.8rem, 1.388, $white);
-      letter-spacing: 0.03rem;
     }
   }
 

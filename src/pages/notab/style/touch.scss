@@ -5,6 +5,29 @@
 
   @media (min-width: 1439.99px) {
     margin-bottom: 15rem;
+
+    & .links-bar__img-wrap--apple {
+      width: 23rem;
+      height: 5.3rem;
+    }
+
+    & .links-bar__img-wrap--google {
+      width: 26.5rem;
+      height: 5.7rem;
+    }
+
+    & .links-bar__apple {
+      height: 8rem;
+      width: 25.8rem;
+      border-radius: 1.3rem;
+      padding: 1.6rem 1.3rem 1rem;
+    }
+
+    & .links-bar__google {
+      width: 29rem;
+      height: 8rem;
+      padding: 1.2rem 1.2rem;
+    }
   }
 
   &__title {
@@ -40,15 +63,24 @@
     }
   }
 
+  &__new-line {
+    display: none;
+
+    @media (min-width: 1439.99px) {
+      display: block;
+    }
+  }
+
   &__text {
     position: relative;
     z-index: 10;
 
-    max-width: 30.1rem;
-    margin: 0 auto 4.9rem;
+    max-width: 32rem;
+    margin: 0 auto 4.8rem;
 
     @include text-16;
     text-align: center;
+    letter-spacing: 0.04rem;
 
     @media (min-width: 1439.99px) {
       max-width: 59rem;
@@ -88,7 +120,7 @@
 
   &__field {
     width: 100%;
-    padding: 1.8rem 1.1rem;
+    padding: 2.1rem 1.1rem 1.9rem;
     border: 0.1rem solid $grey-5c5;
     border-radius: 1rem;
 
@@ -108,9 +140,11 @@
     }
 
     &--message {
-      margin-bottom: 4rem;
+      min-height: 14rem;
+      margin-bottom: 2.4rem;
 
       @media (min-width: 1439.99px) {
+        min-height: unset;
         padding: 2.9rem 2.5rem 4.4rem;
         margin-bottom: 3.5rem;
       }
@@ -154,43 +188,20 @@
   }
 
   &__promo {
-    margin-bottom: 4.5rem;
+    margin-bottom: 4.2rem;
 
     @include title-24;
     text-align: center;
+    text-transform: uppercase;
 
     @media (min-width: 1439.99px) {
       margin-bottom: 3.2rem;
 
-      text-transform: uppercase;
       letter-spacing: -0.05rem;
     }
   }
 
   &__download {
     padding-top: 0.3rem;
-  }
-
-  & .links-bar__img-wrap--apple {
-    width: 23rem;
-    height: 5.3rem;
-  }
-
-  & .links-bar__img-wrap--google {
-    width: 26.5rem;
-    height: 5.7rem;
-  }
-
-  & .links-bar__apple {
-    height: 8rem;
-    width: 25.8rem;
-    border-radius: 1.3rem;
-    padding: 1.6rem 1.3rem 1rem;
-  }
-
-  & .links-bar__google {
-    width: 29rem;
-    height: 8rem;
-    padding: 1.2rem 1.2rem;
   }
 }

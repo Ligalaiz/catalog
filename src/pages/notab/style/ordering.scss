@@ -2,6 +2,11 @@
 
 .ordering {
   padding-top: 1.8rem;
+  margin-bottom: 9rem;
+
+  @media (min-width: 1439.99px) {
+    margin-bottom: unset;
+  }
 
   & .container {
     position: relative;
@@ -23,12 +28,8 @@
     }
   }
 
-  &__wrap {
-    position: relative;
-
-    min-height: 55.2rem;
-
-    background: url('../../img/phone-wrapped.png') center/contain no-repeat;
+  &__body {
+    background: url('../../img/phone-mb-wrapped.png') 41% 65% no-repeat;
 
     @media (min-width: 1439.99px) {
       position: relative;
@@ -38,23 +39,33 @@
       height: 103.821rem;
       margin: 0 auto;
 
-      background: url('../../img/phone-wrapped.png') 56.5% 50% / contain no-repeat;
+      background: url('../../img/phone-desct-wrapped.png') 53.5% 41.5% no-repeat;
     }
   }
 
-  &__head {
-    @media (min-width: 1439.99px) {
-      position: relative;
-      z-index: 10;
+  &__wrap {
+    &--body {
+      min-height: 63rem;
+    }
 
-      max-width: 48.1rem;
-      margin-left: auto;
+    @media (min-width: 1439.99px) {
+      &--head {
+        max-width: 48.1rem;
+        margin-left: auto;
+      }
+
+      &--body {
+        position: relative;
+        z-index: 10;
+
+        min-height: 104.2rem;
+      }
     }
   }
 
   &__title {
     max-width: 19.8rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.3rem;
 
     @include title-24;
 
@@ -68,6 +79,7 @@
 
   &__subtitle {
     @include text-16;
+    letter-spacing: 0.04rem;
 
     @media (min-width: 1439.99px) {
       padding-left: 0.5rem;
@@ -103,8 +115,6 @@
 
     &--cards,
     &--cards2 {
-      max-width: 16.9rem;
-
       @media (min-width: 1439.99px) {
         border-radius: 1.7rem;
 
@@ -114,9 +124,11 @@
 
     &--cards {
       position: absolute;
-      left: 6.6%;
+      top: 11.8%;
+      left: 10%;
 
-      padding: 1rem 1rem 1rem 1.7rem;
+      max-width: 16.6rem;
+      padding: 1rem 1rem 1rem 1.6rem;
 
       @media (min-width: 1439.99px) {
         left: 15%;
@@ -128,10 +140,11 @@
     }
 
     &--cards2 {
-      top: 16%;
-      right: -3.7%;
+      top: 25.8%;
+      right: 4.1%;
 
-      padding: 1.2rem 1rem 1.3rem 1.7rem;
+      max-width: 17.1rem;
+      padding: 1.4rem 1.5rem 1.3rem 1.7rem;
 
       @media (min-width: 1439.99px) {
         top: 19.6%;
@@ -143,11 +156,11 @@
     }
 
     &--split {
-      bottom: 0%;
-      right: -4%;
+      bottom: 1%;
+      right: 4%;
 
       max-width: 12.2rem;
-      padding: 1.2rem 1rem 1.2rem 2rem;
+      padding: 1.1rem 1rem 1.1rem 1.8rem;
 
       @media (min-width: 1439.99px) {
         bottom: 29.8%;
@@ -161,11 +174,11 @@
     }
 
     &--skip {
-      bottom: 18%;
-      left: 4%;
+      bottom: 16.4%;
+      left: 8%;
 
-      max-width: 12rem;
-      padding: 1.3rem 1.4rem 1rem 1.7rem;
+      max-width: 11rem;
+      padding: 1.2rem 1.4rem 1.2rem 1.4rem;
 
       @media (min-width: 1439.99px) {
         bottom: 23.5%;
