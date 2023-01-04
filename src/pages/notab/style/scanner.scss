@@ -8,6 +8,10 @@
 
   @media (min-width: 767.99px) {
     padding-top: 44rem;
+    margin-bottom: unset;
+  }
+
+  @media (min-width: 1199.99px) {
     margin-bottom: 20.4rem;
   }
 
@@ -61,7 +65,7 @@
       margin: 0 auto;
     }
 
-    @media (min-width: 991.99px) {
+    @media (min-width: 990.99px) {
       margin: unset;
     }
   }
@@ -74,7 +78,7 @@
     align-items: center;
     order: 1;
 
-    @media (min-width: 991.99px) {
+    @media (min-width: 990.99px) {
       flex-direction: row;
       justify-content: center;
       order: unset;
@@ -90,7 +94,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 991.99px) {
+    @media (min-width: 990.99px) {
       column-gap: 12.8rem;
       align-items: center;
       row-gap: 9rem;

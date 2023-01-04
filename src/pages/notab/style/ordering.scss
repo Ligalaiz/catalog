@@ -4,7 +4,7 @@
   padding-top: 1.8rem;
   margin-bottom: 9rem;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     margin-bottom: unset;
   }
 
@@ -31,13 +31,20 @@
   &__body {
     background: url('../../img/phone-mb-wrapped.png') 41% 65% no-repeat;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       position: relative;
       z-index: 10;
 
       width: 100%;
       height: 103.821rem;
       margin: 0 auto;
+
+      background: url('../../img/phone-desct-wrapped.png') 53.5% 41.5% no-repeat;
+      background-size: 54rem;
+    }
+
+    @media (min-width: 990.99px) {
+      height: 103.821rem;
 
       background: url('../../img/phone-desct-wrapped.png') 53.5% 41.5% no-repeat;
     }
@@ -48,13 +55,23 @@
       min-height: 63rem;
     }
 
-    @media (min-width: 1439.99px) {
-      &--head {
-        max-width: 48.1rem;
-        margin-left: auto;
+    &--head {
+      @media (min-width: 400.99px) {
+        max-width: 34.5rem;
+        width: 100%;
+        margin: 0 auto;
       }
 
-      &--body {
+      @media (min-width: 767.99px) {
+        max-width: 48.1rem;
+        width: unset;
+        margin: unset;
+        margin-left: auto;
+      }
+    }
+
+    &--body {
+      @media (min-width: 767.99px) {
         position: relative;
         z-index: 10;
 
@@ -69,7 +86,7 @@
 
     @include title-24;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       max-width: unset;
       margin-bottom: 2.1rem;
 
@@ -81,7 +98,7 @@
     @include text-16;
     letter-spacing: 0.04rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       padding-left: 0.5rem;
 
       @include fontz(1.8rem, 1.388, $white);
@@ -94,7 +111,11 @@
     font-family: 'Roboto';
     font-weight: 500;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
+      @include fontz(1.8rem, 1.2, $white);
+    }
+
+    @media (min-width: 990.99px) {
       @include fontz(2.2rem, 1.2, $white);
     }
   }
@@ -109,13 +130,13 @@
 
     background-color: $black;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       border-radius: 1.7rem;
     }
 
     &--cards,
     &--cards2 {
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         border-radius: 1.7rem;
 
         letter-spacing: 0.03rem;
@@ -125,15 +146,20 @@
     &--cards {
       position: absolute;
       top: 11.8%;
-      left: 10%;
+      left: calc(50% - 15rem);
 
       max-width: 16.6rem;
       padding: 1rem 1rem 1rem 1.6rem;
 
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         left: 15%;
         top: 34.5%;
 
+        max-width: 25rem;
+        padding: 1.6rem;
+      }
+
+      @media (min-width: 990.99px) {
         max-width: 28.3rem;
         padding: 2.9rem 1rem 3rem 2.6rem;
       }
@@ -141,54 +167,68 @@
 
     &--cards2 {
       top: 25.8%;
-      right: 4.1%;
+      right: calc(50% - 17.2rem);
 
       max-width: 17.1rem;
       padding: 1.4rem 1.5rem 1.3rem 1.7rem;
 
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         top: 19.6%;
         right: 23.2%;
 
-        padding: 2.2rem 1rem 2.1rem 2.1rem;
+        max-width: 24.7rem;
+        padding: 1.6rem;
+      }
+
+      @media (min-width: 990.99px) {
         max-width: 26.7rem;
+        padding: 2.2rem 1rem 2.1rem 2.1rem;
       }
     }
 
     &--split {
       bottom: 1%;
-      right: 4%;
+      right: calc(50% - 17.2rem);
 
       max-width: 12.2rem;
       padding: 1.1rem 1rem 1.1rem 1.8rem;
 
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         bottom: 29.8%;
         right: 12%;
 
-        max-width: 18.5rem;
-        padding: 1.8rem 1rem 1.8rem 2.1rem;
+        max-width: 15rem;
+        padding: 1.6rem;
 
         letter-spacing: 0.04rem;
+      }
+
+      @media (min-width: 990.99px) {
+        max-width: 18.5rem;
+        padding: 1.8rem 1rem 1.8rem 2.1rem;
       }
     }
 
     &--skip {
       bottom: 16.4%;
-      left: 8%;
+      left: calc(50% - 15.7rem);
 
       max-width: 11rem;
       padding: 1.2rem 1.4rem 1.2rem 1.4rem;
 
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         bottom: 23.5%;
         left: 33%;
 
         max-width: 20.5rem;
         border-radius: 1.7rem;
-        padding: 1.7rem 2.4rem 2rem 2.4rem;
+        padding: 1.6rem;
 
         letter-spacing: 0.04rem;
+      }
+
+      @media (min-width: 990.99px) {
+        padding: 1.7rem 2.4rem 2rem 2.4rem;
       }
     }
   }

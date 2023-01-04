@@ -3,7 +3,7 @@
 .touch {
   margin-bottom: 6.4rem;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     margin-bottom: 15rem;
 
     & .links-bar__img-wrap--apple {
@@ -36,7 +36,11 @@
     @include title-24;
     text-align: center;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 575.99px) {
+      @include fontz(3.2rem, 1.215, $white);
+    }
+
+    @media (min-width: 767.99px) {
       position: relative;
       z-index: 10;
 
@@ -66,7 +70,7 @@
   &__new-line {
     display: none;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       display: block;
     }
   }
@@ -80,9 +84,12 @@
 
     @include text-16;
     text-align: center;
-    letter-spacing: 0.04rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 575.99px) {
+      @include fontz(1.7rem, 1.388, $white);
+    }
+
+    @media (min-width: 767.99px) {
       max-width: 59rem;
       margin-bottom: 8rem;
 
@@ -99,7 +106,7 @@
   }
 
   &__wrap {
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -108,12 +115,12 @@
   }
 
   &__form {
-    margin-bottom: 7.4rem;
+    margin: 0 auto 7.4rem;
+    max-width: 81.8rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       row-gap: 2.3rem;
 
-      max-width: 81.8rem;
       margin: 0 auto 9.1rem;
     }
   }
@@ -124,7 +131,7 @@
     border: 0.1rem solid $grey-5c5;
     border-radius: 1rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       padding: 2.9rem 2.5rem 2.7rem;
 
       @include fontz(1.8rem, 1.388, $black);
@@ -134,7 +141,7 @@
       @include text-16;
       color: $grey-bfb;
 
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         @include fontz(1.8rem, 1.388, $grey-bfb);
       }
     }
@@ -143,7 +150,7 @@
       min-height: 14rem;
       margin-bottom: 2.4rem;
 
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         min-height: unset;
         padding: 2.9rem 2.5rem 4.4rem;
         margin-bottom: 3.5rem;
@@ -163,7 +170,7 @@
     transition: $anim;
     cursor: pointer;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       max-width: 39.8rem;
       width: 100%;
       margin: 0 auto;
@@ -180,7 +187,7 @@
   }
 
   &__links {
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       max-width: 61rem;
       justify-content: space-between;
       margin: 0 auto;
@@ -194,7 +201,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       margin-bottom: 3.2rem;
 
       letter-spacing: -0.05rem;

@@ -6,32 +6,37 @@
   padding-top: 26.2rem;
   margin-bottom: 10rem;
 
-  background: url('../../img/qr-mb-bg.jpg') 50% 1.6% no-repeat;
+  background: top center url('../../img/qr-tab-bg.jpg') no-repeat;
 
-  @media (min-width: 1439.99px) {
+  background-size: contain;
+  background-position: 50% 0;
+
+  @media (min-width: 767.99px) {
     padding-top: 23.7rem;
     margin-bottom: 17.1rem;
+  }
 
+  @media (min-width: 1199.99px) {
     background: top center url('../../img/qr-desc-bg.png') no-repeat;
   }
 }
 
 .code-qr {
-  background: url('../../img/order-mb-bg.png') 100% 23% no-repeat;
+  background: url('../../img/qr-mb-bg.png') 100% 23% no-repeat;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     background: none;
   }
 
   &__wrap {
-    @media (min-width: 1439.99px) {
+    @media (min-width: 1199.99px) {
       display: flex;
       justify-content: space-between;
     }
   }
 
   &__left {
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -53,14 +58,19 @@
     margin-bottom: 8.2rem;
     row-gap: 5rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       flex-direction: row;
+      justify-content: center;
       padding-top: unset;
       margin-bottom: unset;
       align-items: unset;
       column-gap: 3.8rem;
 
       background: none;
+    }
+
+    @media (min-width: 1199.99px) {
+      justify-content: unset;
     }
   }
 
@@ -69,7 +79,7 @@
 
     @include title-24;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       @include fontz(5.1rem, 1.215, $white);
     }
   }
@@ -81,7 +91,7 @@
     @include text-16;
     letter-spacing: 0.06rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       max-width: 29.7rem;
       margin-bottom: 5.5rem;
 
@@ -96,7 +106,7 @@
     width: 28.098rem;
     height: 56.368rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       width: 33.2rem;
       height: 66.8rem;
     }
@@ -111,7 +121,7 @@
     &--order {
       margin: 0 auto 5rem;
 
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         margin: unset;
       }
     }
@@ -119,7 +129,7 @@
     &--cooking {
       margin: 0 auto 5rem;
 
-      @media (min-width: 1439.99px) {
+      @media (min-width: 767.99px) {
         position: relative;
         top: 34.1rem;
 
@@ -139,7 +149,7 @@
 
   background: no-repeat url('../../img/generate-mb-bg.png') center 59% / contain;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     position: relative;
 
     max-width: 144rem;
@@ -178,7 +188,19 @@
     height: 36.428rem;
     margin: 0 auto;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 575.99px) {
+      width: 22.256rem;
+      height: 44.715rem;
+    }
+
+    @media (min-width: 767.99px) {
+      left: 1rem;
+
+      width: 27.256rem;
+      height: 55.715rem;
+    }
+
+    @media (min-width: 1199.99px) {
       left: 1rem;
 
       width: 33.256rem;
@@ -187,7 +209,7 @@
   }
 
   &__promo {
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -199,7 +221,7 @@
     padding-bottom: 8.5rem;
     order: 1;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       order: unset;
       padding-top: 3.2rem;
     }
@@ -210,7 +232,7 @@
 
     @include title-24;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       max-width: 38.1rem;
       margin-bottom: unset;
 
@@ -225,7 +247,7 @@
     @include text-16;
     letter-spacing: 0.05rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       max-width: 29.2rem;
       margin-bottom: 1rem;
 
@@ -243,10 +265,14 @@
     font-family: 'Montserrat';
     font-weight: 700;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 400.99px) {
+      right: calc(50% - 18rem);
+    }
+
+    @media (min-width: 767.99px) {
       bottom: unset;
       top: 40.5%;
-      right: 13%;
+      right: calc(50% - 35.4rem);
 
       @include fontz(2.1rem, 1.238, $white);
     }
@@ -260,10 +286,14 @@
     width: 3.4rem;
     height: 10.2rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 400.99px) {
+      right: calc(50% - 18rem);
+    }
+
+    @media (min-width: 767.99px) {
       bottom: unset;
       top: 27.5%;
-      right: 26.5%;
+      right: calc(50% - 23.4rem);
 
       transform: rotate(-37deg);
     }

@@ -5,7 +5,7 @@
 
   background: url('../../img/integration-mb-bg.png') 50% 100% no-repeat;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     padding-bottom: unset;
     margin-bottom: 19.3rem;
 
@@ -21,7 +21,7 @@
 
     @include title-24;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       margin-bottom: 3.1rem;
 
       @include fontz(5.1rem, 1.215, $white);
@@ -34,7 +34,7 @@
     @include text-16;
     letter-spacing: 0.04rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       position: relative;
       z-index: 10;
 
@@ -45,10 +45,16 @@
   }
 
   &__left {
-    @media (min-width: 1439.99px) {
-      position: relative;
-
+    @media (min-width: 767.99px) {
       padding: 9.2rem 0 22rem;
+
+      background: url('../../img/integration-desc-bg.png') no-repeat;
+      background-size: 51rem;
+      background-position: right bottom;
+    }
+
+    @media (min-width: 1199.99px) {
+      position: relative;
 
       background: url('../../img/integration-desc-bg.png') 97.3% 0 no-repeat;
 

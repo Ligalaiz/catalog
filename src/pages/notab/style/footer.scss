@@ -3,7 +3,7 @@
 .footer {
   padding-bottom: 2.4rem;
 
-  @media (min-width: 1439.99px) {
+  @media (min-width: 767.99px) {
     padding-bottom: 1.5rem;
   }
 
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       flex-direction: row;
       justify-content: space-between;
     }
@@ -20,7 +20,7 @@
   &__contacts {
     order: 1;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       position: relative;
       order: unset;
 
@@ -54,7 +54,7 @@
   &__terms {
     margin-bottom: 1.4rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       padding-right: 0.7rem;
       margin-bottom: 2.4rem;
     }
@@ -66,7 +66,7 @@
     font-family: 'Avenir';
     text-align: center;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       position: relative;
       z-index: 10;
 
@@ -78,7 +78,7 @@
   &__mail {
     margin-bottom: 0.9rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       margin-bottom: 1.9rem;
     }
   }
@@ -87,7 +87,7 @@
     @include fontz(1.4rem, 1.357, $white);
     font-weight: 500;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       display: block;
 
       @include fontz(1.8rem, 1.388, $white);
@@ -102,7 +102,7 @@
   &__policy {
     margin-bottom: 5.8rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       padding-top: 0.2rem;
     }
   }
@@ -114,7 +114,7 @@
     height: 1.4rem;
     margin: 0 auto 1.7rem;
 
-    @media (min-width: 1439.99px) {
+    @media (min-width: 767.99px) {
       width: 8.1rem;
       height: 1.7rem;
       margin: unset;
