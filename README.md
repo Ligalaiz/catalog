@@ -3,33 +3,6 @@
 
 # Notab - app landing page.
 
-## Templates
-
-<table>
-  <tr>
-    <th>
-      <a href="https://ligalaiz-notab.netlify.app/notab" target="_blank">Landing Page | Desktop</a>
-    </th>
-    <th>
-      <a href="https://ligalaiz-notab.netlify.app/notab" target="_blank">Landing Page | Mobile</a>
-    </th>
-  </tr>
-
-  <tr valign="top">
-    <td>
-      <a href="https://github.com/Ligalaiz/catalog/blob/develop/src/template/landing.jpg?raw=true" target="_blank">
-        <img src="https://github.com/Ligalaiz/catalog/blob/develop/src/template/landing.jpg?raw=true?raw=true" width="250" alt="Desktop">
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/Ligalaiz/catalog/blob/develop/src/template/mobile.jpg?raw=true" target="_blank">
-        <img src="https://github.com/Ligalaiz/catalog/blob/develop/src/template/mobile.jpg?raw=true" width="250" alt="Mobile">
-      </a>
-    </td>
-  </tr>
-</table>
-
-
 ## Tech Stack
 
 SCSS, JS
@@ -123,3 +96,28 @@ To run deploy, run the following command
 ├── prettier.config.js               # Конфигурация форматирования кода
 └── README.md                        # Файл описания проекта
 ```
+## Templates
+
+<table>
+  <tr>
+    <th>
+      <a href="https://ligalaiz-notab.netlify.app/notab" target="_blank">Landing Page | Desktop</a>
+    </th>
+    <th>
+      <a href="https://ligalaiz-notab.netlify.app/notab" target="_blank">Landing Page | Mobile</a>
+    </th>
+  </tr>
+
+  <tr valign="top">
+    <td>
+      <a href="https://github.com/Ligalaiz/catalog/blob/develop/src/template/landing.jpg?raw=true" target="_blank">
+        <img src="https://github.com/Ligalaiz/catalog/blob/develop/src/template/landing.jpg?raw=true?raw=true" width="250" alt="Desktop">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/Ligalaiz/catalog/blob/develop/src/template/mobile.jpg?raw=true" target="_blank">
+        <img src="https://github.com/Ligalaiz/catalog/blob/develop/src/template/mobile.jpg?raw=true" width="250" alt="Mobile">
+      </a>
+    </td>
+  </tr>
+</table>
