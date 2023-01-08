@@ -1,6 +1,5 @@
 const { join } = require('path');
 const { merge } = require('webpack-merge');
-const { extendDefaultPlugins } = require('svgo');
 
 const ESLintPlugin = require('eslint-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -42,23 +41,6 @@ module.exports = merge(commonConfig, {
               ['gifsicle', { interlaced: true }],
               ['jpegtran', { progressive: true }],
               ['optipng', { optimizationLevel: 5 }],
-              [
-                'svgo',
-                {
-                  plugins: extendDefaultPlugins([
-                    {
-                      name: 'removeViewBox',
-                      active: false,
-                    },
-                    {
-                      name: 'addAttributesToSVGElement',
-                      params: {
-                        attributes: [{ xmlns: 'http://www.w3.org/2000/svg' }],
-                      },
-                    },
-                  ]),
-                },
-              ],
             ],
           },
         },

@@ -22,7 +22,7 @@ const JS_FILES = getFiles('js');
 const HTML_FILES = getFiles('html');
 const FOLDERS = fs.readdirSync(SRC_PAGES);
 
-const getEtries = () => {
+const getEntries = () => {
   return JS_FILES.map((file) => {
     const [fileName] = file.split('.');
     return `${SRC_PAGES}/${fileName}/${file}`;
@@ -39,7 +39,7 @@ module.exports = {
   },
   getFiles,
   commonConfig: {
-    entry: ['@babel/polyfill', ...getEtries()],
+    entry: ['@babel/polyfill', ...getEntries()],
 
     module: {
       rules: [
@@ -98,10 +98,7 @@ module.exports = {
         cleanStaleWebpackAssets: false,
       }),
       new CopyPlugin({
-        patterns: [
-          { from: join(SRC_DIR, 'assets/favicons'), to: 'assets/favicons' },
-          { from: join(SRC_DIR, 'assets/img'), to: 'assets/img' },
-        ],
+        patterns: [{ from: join(SRC_DIR, 'assets/favicons'), to: 'assets/favicons' }],
       }),
     ],
   },
